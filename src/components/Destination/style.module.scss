@@ -1,0 +1,65 @@
+.destination {
+  margin: 90px 0;
+  h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    p {
+      font-size: 15px;
+      color: gray;
+      text-align: center;
+      max-width: 700px;
+      margin-bottom: 50px;
+    }
+  }
+
+
+  .items {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    .item {
+      position: relative;
+      max-width: 350px;
+      overflow: hidden; /* Для обрезания дочерних элементов, которые выходят за пределы .item */
+
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0); /* Начальная прозрачность */
+      transition: background 0.3s ease; /* Плавное изменение цвета при наведении */
+    }
+
+    &:hover::before {
+      background: rgba(0, 0, 0, 0.5); /* Прозрачный черный цвет для затемнения */
+    }
+
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+      span {
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: #f1f1f1;
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+
+    }
+  }
+}

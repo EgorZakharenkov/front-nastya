@@ -1,0 +1,41 @@
+.bronPage {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 200px 0;
+  .items {
+    .item {
+      img {
+        width: 380px;
+        object-fit: cover;
+      }
+      .price {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 5px;
+        border: 1px solid #d7d4d4;
+      }
+      h3 {
+        font-size: 20px;
+      }
+      span {
+        color: grey;
+      }
+      .date {
+        margin-top: 10px;
+      }
+      .btn {
+        margin-top: 10px;
+        padding: 10px 15px;
+        background: #000;
+        border: none;
+        color: #f1f1f1;
+        transition: .3s;
+        cursor: pointer;
+        &:hover {
+          background: orange;
+        }
+      }
+    }
+  }
+
+}
